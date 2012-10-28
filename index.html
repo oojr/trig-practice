@@ -2,11 +2,13 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
+  
   <title>Trig Practice</title>
   <!---Bootstrap Css -->
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/app.css"/>
-  
+  <!--Adobe Web Font -->
+  <script src="http://use.edgefonts.net/droid-sans.js"></script>
 </head>
 <body>
     <style>
@@ -23,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="http://twitter.com/oojx" target="_blank">@oojx</a>
+          <a class="brand shame-less promotion" href="http://twitter.com/oojx" target="_blank">@oojx</a>
           <div class="nav-collapse collapse">
             
           </div><!--/.nav-collapse -->
@@ -32,346 +34,410 @@
     </div>
   
 
- <div class="container">
+ <div class="container well">
 
       <h1>Trigonometric Identities and Integrals Practice</h1>
 
       <p>Fill in the proper answers for each identity and integral, you will receive feedback, telling if you are correct or not quite right </p>
       <h3>Identities</h3>
-
-   <!-- problem 1-->
-   <div class="row offset2">
-      <img src="assets/img/cscx.png" alt="cscx" class="span2 img-rounded">
-      <form class="span5" style="margin-top:12px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 1-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="cscx">1. csc <em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="cscx" type="text" name="input" ng-model="text"
              ng-pattern="answer1" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-  <!-- problem 2-->
-   <div class="row offset2">
-        <img src="assets/img/secx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:12px" name="myForm" ng-controller="Ctrl">
-          <input type="stext" name="input" ng-model="text"
+<!--Problem 2-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="secx">2. sec <em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="secx" type="text" name="input" ng-model="text"
              ng-pattern="answer2" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div><!--end of row 2 -->
 
-<!-- problem 3-->
-   <div class="row offset2">
-      <img src="assets/img/cotx.png" class="span2">
-      <form class="span5" style="margin-top:12px"  name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 3-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="cotx">3. cot <em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="cotx" type="text" name="input" ng-model="text"
              ng-pattern="answer3" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
-  
-  <!-- problem 4-->
-   <div class="row offset2">
-      <img src="assets/img/tanx.png" class="span2 img-rounded">
-      <form class="span5"  name="myForm" style="margin-top:12px" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
+
+<!--Problem 4-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="tanx">4. tan <em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="tanx" type="text" name="input" ng-model="text"
              ng-pattern="answer4" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 5-->
-   <div class="row offset2">
-      <img src="assets/img/cotx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:12px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 5-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="cotx">5. cot <em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="cotx" type="text" name="input" ng-model="text"
              ng-pattern="answer5" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>   
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 6-->
-   <div class="row offset2">
-      <img src="assets/img/sinxcosx1.png" class="span2 img-rounded">
-      <form class="span5" name="myForm" style="margin-top:9px" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 6-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="sinsqxcossqx">6. sin<sup>2</sup><em>x</em> + cos<sup>2</sup><em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="sinsqxcossqx" type="text" name="input" ng-model="text"
              ng-pattern="answer6" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form> 
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 7-->
-   <div class="row offset2">
-      <img src="assets/img/tanplus1.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:10px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 7-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="tansqxplus1">7. tan<sup>2</sup><em>x</em> + 1 =</label>
+    <div class="controls">
+      <input type="text" id="tansqxplus1" type="text" name="input" ng-model="text"
              ng-pattern="answer7" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form> 
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 8-->
-   <div class="row offset2">
-      <img src="assets/img/1pluscot.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:8px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 8-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="1pluscotsqx">8. 1 + cot<sup>2</sup><em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="tanx" type="text" name="input" ng-model="text"
              ng-pattern="answer8" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form> 
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 9-->
-   <div class="row offset2">
-      <img src="assets/img/sinxcosx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:8px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 9-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="sinxcosx">9. sin<em>x</em> cos<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="tanx" type="text" name="input" ng-model="text"
              ng-pattern="answer9" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form> 
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-   
-
-   <!-- problem 10-->
-   <div class="row offset2">
-        <img src="assets/img/cos2x.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:13px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 10-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="cos2x">10. cos 2<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="cos2x" type="text" name="input" ng-model="text"
              ng-pattern="answer10" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row-->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 11-->
-   <div class="row offset2">
-        <img src="assets/img/sinsqx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:19px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 11-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="sinsqx">11. sin<sup>2</sup> <em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="sinsqx" type="text" name="input" ng-model="text"
              ng-pattern="answer11" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 12-->
-   <div class="row offset2">
-        <img src="assets/img/cossqx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-          <input type="text" name="input" ng-model="text"
+<!--Problem 12-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="cossqx">12. cos<sup>2</sup><em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="cossqx" type="text" name="input" ng-model="text"
              ng-pattern="answer12" required>
-            <span class="label" ng-show="myForm.input.$error.required">
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form> 
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
+
 
 <h3>Integrals</h3>
-<!-- problem 13-->
-   <div class="row offset2">
-        <img src="assets/img/intsinx.png" class="span2 img-rounded">
-      <form class="span6" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-        <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer13" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
+
+<!--Problem 13-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intsinx">13. &int; sin <em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="intsinx" type="text" name="input" ng-model="text"
+             ng-pattern="answer13" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 14-->
-   <div class="row offset2">
-      <img src="assets/img/intcosx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer14" required><span class="add-on">+ C</span>
-        </div>
-          
-            <span class="label" ng-show="myForm.input.$error.required">
+<!--Problem 14-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intcosx">14. &int; cos <em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="tanx" type="text" name="input" ng-model="text"
+             ng-pattern="answer14" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 15-->
-   <div class="row offset2">
-      <img src="assets/img/intsecsqx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer15" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
+<!--Problem 15-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intsecsqx">15. &int; sec<sup>2</sup><em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="intseqsqz" type="text" name="input" ng-model="text"
+             ng-pattern="answer15" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-   <!-- problem 16-->
-   <div class="row offset2">
-      <img src="assets/img/intcscsqx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer16" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
+<!--Problem 16-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intcscsqx">16. &int; csc<sup>2</sup><em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="intcscsqx" type="text" name="input" ng-model="text"
+             ng-pattern="answer16" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 17-->
-   <div class="row offset2">
-      <img src="assets/img/intsecxtanx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer17" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
+<!--Problem 17-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intsecxtanx">17. &int; sec<em>x</em> tan<em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="intsecxtanx" type="text" name="input" ng-model="text"
+             ng-pattern="answer17" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-<!-- problem 18-->
-   <div class="row offset2">
-      <img src="assets/img/intcscxcotx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-          <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer18" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
+<!--Problem 18-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intcscxcotx">18. &int; csc<em>x</em> cot<em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="intcscxcotx" type="text" name="input" ng-model="text"
+             ng-pattern="answer18" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-   <!-- problem 19-->
-   <div class="row offset2">
-      <img src="assets/img/intsecx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer19" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
+<!--Problem 19-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intsecx">19. &int; sec <em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="tanx" type="text" name="input" ng-model="text"
+             ng-pattern="answer19" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-   <!-- problem 20-->
-   <div class="row offset2">
-      <img src="assets/img/intcscx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer13" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
-            Type Something...
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+<!--Problem 20-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="tanx">20. &int; csc <em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="intcscx" type="text" name="input" ng-model="text"
+             ng-pattern="answer20" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
+            Type Something...</span>
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-    <!-- problem 21-->
-   <div class="row offset2">
-      <img src="assets/img/inttanx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer13" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
-            Type Something...
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+<!--Problem 21-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="inttanx">21. &int; tan <em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="inttanx" type="text" name="input" ng-model="text"
+             ng-pattern="answer21" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
+            Type Something...</span>
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
-    <!-- problem 22-->
-   <div class="row offset2">
-      <img src="assets/img/intcotx.png" class="span2 img-rounded">
-      <form class="span5" style="margin-top:16px" name="myForm" ng-controller="Ctrl">
-           <div class="input-append">
-          <input type="text" id="appendedPrependedInput" name="input" ng-model="text"
-             ng-pattern="answer22" required><span class="add-on">+ C</span>
-        </div>
-            <span class="label" ng-show="myForm.input.$error.required">
-            Type Something...
-             <span class="label label-warning" ng-show="myForm.input.$error.pattern">
+<!--Problem 22-->
+<div class="row offset2">
+<form class="form-horizontal" name="myForm" ng-controller="Ctrl">
+  <div class="control-group">
+    <label class="control-label" for="intcotx">22. &int; cot <em>x</em> d<em>x</em> =</label>
+    <div class="controls">
+      <input type="text" id="intcotx" type="text" name="input" ng-model="text"
+             ng-pattern="answer22" required>
+      <span class="help-inline label" ng-show="myForm.input.$error.required">
+            Type Something...</span>
+      <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
-     </form>
-   </div> <!--- End of row -->
-
-   
+    </div>
+  </div>
+</form>
+</div> <!--End of row -->
 
     </div> <!-- /container -->
   

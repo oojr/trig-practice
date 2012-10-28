@@ -28,3 +28,17 @@
   content: "";
   padding: 0;
 }
+
+body{
+  font-family: droid-sans, serif;
+  background-image:url(../img/nasty_fabric.png);
+}
+
+.well{
+  background-color:white;
+}
+
+.form-horizontal .control-label {
+font-size: 17px;
+font-weight: bold;
+}
