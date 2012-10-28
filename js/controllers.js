@@ -25,18 +25,18 @@ function Ctrl($scope) {
   $scope.answer8 = /^csc\^2x\b/;
   $scope.answer9 = /^1\/2sin2x\b/;
   $scope.answer10 = /^cos\^2x\-sin\^2x\b/;
-  $scope.answer11 = /^1\/cosx\b/;
-  $scope.answer12 = /^1\/cosx\b/;
-  $scope.answer13 = /^1\/cosx\b/;
-  $scope.answer14 = /^1\/cosx\b/;
-  $scope.answer15 = /^1\/cosx\b/;
-  $scope.answer16 = /^1\/cosx\b/;
-  $scope.answer17 = /^1\/cosx\b/;
-  $scope.answer18 = /^1\/cosx\b/;
-  $scope.answer19 = /^1\/cosx\b/;
-  $scope.answer20 = /^1\/cosx\b/;
-  $scope.answer21 = /^1\/cosx\b/;
-  $scope.answer22 = /^1\/cosx\b/;
+  $scope.answer11 = /^1\/2\(?1\-cos2x(?=\))\b/;
+  $scope.answer12 = /^1\/2\(?1\+cos2x(?=\))\b/;
+  $scope.answer13 = /^\-cosx\b/;
+  $scope.answer14 = /^sinx\b/;
+  $scope.answer15 = /^tanx\b/;
+  $scope.answer16 = /^\-cotx\b/;
+  $scope.answer17 = /^secx\b/;
+  $scope.answer18 = /^\-cscx\b/;
+  $scope.answer19 = /^ln\|?secx\+tanx(?=\|)\b/;
+  $scope.answer20 = /^ln\|?cscx\-cotx(?=\|)\b/;
+  $scope.answer21 = /^ln\|?secx(?=\|)\b/;
+  $scope.answer22 = /^ln\|?sinx(?=\|)\b/;
   
 
 }

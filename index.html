@@ -25,28 +25,39 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand shame-less promotion" href="http://twitter.com/oojx" target="_blank">@oojx</a>
-          <div class="nav-collapse collapse">
-            
-          </div><!--/.nav-collapse -->
-        </div>
+          <a class="brand shameless self-promotion" href="http://twitter.com/oojx" target="_blank">@oojx</a>
+          
+          
+      
+
       </div>
     </div>
+  </div>
   
 
  <div class="container well">
+  <div class="tweet-button">
+          <a href="https://twitter.com/share" class="twitter-share-button pull-right" 
+            data-text="Trigonometric Identities and Integrals Practice #angularjs"
+            data-url="http://oojr.github.com/trig-practice/"
+           data-via="oojx" data-lang="en">Tweet</a>
+        </div>
 
       <h1>Trigonometric Identities and Integrals Practice</h1>
 
       <p>Fill in the proper answers for each identity and integral, you will receive feedback, telling if you are correct or not quite right </p>
       <h3>Identities</h3>
+      <div class="alert alert-info">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  Use a "^" for exponents, leave answer with no space in between operation signals like "-" , the first answer is <strong>1/sinx</strong> and Number 3 and 5 are in relation to tanx and sinx respectively
+</div>
 <!--Problem 1-->
 <div class="row offset2">
 <form class="form-horizontal" name="myForm" ng-controller="Ctrl">
   <div class="control-group">
     <label class="control-label" for="cscx">1. csc <em>x</em> =</label>
     <div class="controls">
-      <input type="text" id="cscx" type="text" name="input" ng-model="text"
+      <input type="text" id="cscx" type="text"  name="input" ng-model="text"
              ng-pattern="answer1" required>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
@@ -265,10 +276,12 @@
   <div class="control-group">
     <label class="control-label" for="intsinx">13. &int; sin <em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append">
       <input type="text" id="intsinx" type="text" name="input" ng-model="text"
-             ng-pattern="answer13" required>
+             ng-pattern="answer13" required> <span class="add-on">+ C</span>
+        </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
-            Type Something...</span>
+            Type Something...</span> 
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
@@ -283,10 +296,12 @@
   <div class="control-group">
     <label class="control-label" for="intcosx">14. &int; cos <em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append">
       <input type="text" id="tanx" type="text" name="input" ng-model="text"
-             ng-pattern="answer14" required>
+             ng-pattern="answer14" required> <span class="add-on">+ C</span>
+      </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
-            Type Something...</span>
+            Type Something...</span> 
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
@@ -301,10 +316,12 @@
   <div class="control-group">
     <label class="control-label" for="intsecsqx">15. &int; sec<sup>2</sup><em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append">
       <input type="text" id="intseqsqz" type="text" name="input" ng-model="text"
-             ng-pattern="answer15" required>
+             ng-pattern="answer15" required><span class="add-on">+ C</span>
+        </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
-            Type Something...</span>
+            Type Something...</span> 
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
@@ -319,10 +336,12 @@
   <div class="control-group">
     <label class="control-label" for="intcscsqx">16. &int; csc<sup>2</sup><em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append">
       <input type="text" id="intcscsqx" type="text" name="input" ng-model="text"
-             ng-pattern="answer16" required>
+             ng-pattern="answer16" required><span class="add-on">+ C</span>
+      </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
-            Type Something...</span>
+            Type Something...</span> 
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
             Not quite...</span>
             <span class="label label-success"ng-show="myForm.input.$valid">You are Correct!</span>
@@ -337,8 +356,10 @@
   <div class="control-group">
     <label class="control-label" for="intsecxtanx">17. &int; sec<em>x</em> tan<em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class= "input-append">
       <input type="text" id="intsecxtanx" type="text" name="input" ng-model="text"
-             ng-pattern="answer17" required>
+             ng-pattern="answer17" required> <span class="add-on">+ C</span>
+        </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
@@ -355,8 +376,10 @@
   <div class="control-group">
     <label class="control-label" for="intcscxcotx">18. &int; csc<em>x</em> cot<em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append">
       <input type="text" id="intcscxcotx" type="text" name="input" ng-model="text"
-             ng-pattern="answer18" required>
+             ng-pattern="answer18" required> <span class="add-on">+ C</span>
+      </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
@@ -373,8 +396,10 @@
   <div class="control-group">
     <label class="control-label" for="intsecx">19. &int; sec <em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append">
       <input type="text" id="tanx" type="text" name="input" ng-model="text"
-             ng-pattern="answer19" required>
+             ng-pattern="answer19" required> <span class="add-on">+ C</span>
+        </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
@@ -391,8 +416,10 @@
   <div class="control-group">
     <label class="control-label" for="tanx">20. &int; csc <em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append">
       <input type="text" id="intcscx" type="text" name="input" ng-model="text"
-             ng-pattern="answer20" required>
+             ng-pattern="answer20" required> <span class="add-on">+ C</span>
+      </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
@@ -409,8 +436,10 @@
   <div class="control-group">
     <label class="control-label" for="inttanx">21. &int; tan <em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append ">
       <input type="text" id="inttanx" type="text" name="input" ng-model="text"
-             ng-pattern="answer21" required>
+             ng-pattern="answer21" required> <span class="add-on">+ C</span>
+      </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
@@ -427,8 +456,10 @@
   <div class="control-group">
     <label class="control-label" for="intcotx">22. &int; cot <em>x</em> d<em>x</em> =</label>
     <div class="controls">
+      <div class="input-append ">
       <input type="text" id="intcotx" type="text" name="input" ng-model="text"
-             ng-pattern="answer22" required>
+             ng-pattern="answer22" required><span class="add-on">+ C</span>
+      </div>
       <span class="help-inline label" ng-show="myForm.input.$error.required">
             Type Something...</span>
       <span class="label label-warning" ng-show="myForm.input.$error.pattern">
@@ -440,6 +471,8 @@
 </div> <!--End of row -->
 
     </div> <!-- /container -->
+
+    
   
 
   <!-- In production use:
@@ -452,5 +485,8 @@
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- Tweet Button -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
